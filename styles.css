@@ -1,0 +1,72 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  color: #333;
+  animation: fadeIn 1s ease-in;
+}
+
+header {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.search-section, .add-section, .library-section, .history-section {
+  padding: 20px;
+  animation: slideUp 1s ease-out;
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background-color: #667eea;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.book-card {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #667eea;
+  border-radius: 10px;
+  animation: fadeInCard 0.5s ease forwards;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(30px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes fadeInCard {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}

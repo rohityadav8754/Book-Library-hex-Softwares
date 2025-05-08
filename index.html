@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Book Library</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>📚 My Personal Book Library</h1>
+  </header>
+
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search by title or author..." />
+  </section>
+
+  <section class="add-section">
+    <input type="text" id="title" placeholder="Book Title" />
+    <input type="text" id="author" placeholder="Author" />
+    <select id="category">
+      <option value="Fiction">Fiction</option>
+      <option value="Non-Fiction">Non-Fiction</option>
+      <option value="Sci-Fi">Sci-Fi</option>
+      <option value="History">History</option>
+    </select>
+    <button onclick="addBook()">Add Book</button>
+  </section>
+
+  <section class="library-section">
+    <h2>📘 Library</h2>
+    <div id="bookList" class="book-list"></div>
+  </section>
+
+  <section class="history-section">
+    <h2>📜 Borrowing History</h2>
+    <ul id="historyList"></ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 | Rohit Yadav's Library App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
